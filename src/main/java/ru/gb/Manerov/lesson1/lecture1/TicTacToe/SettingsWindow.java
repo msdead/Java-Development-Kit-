@@ -45,7 +45,7 @@ public class SettingsWindow extends JFrame {
     JRadioButton humanVsHuman = new JRadioButton("Человек против человека");
     ButtonGroup gameModeButtonsGroup = new ButtonGroup();
     JPanel panBottom;
-    SettingsWindow(GameWindow gameWindow){
+    public SettingsWindow(GameWindow gameWindow){
         setLocationRelativeTo(gameWindow);
         setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
         panBottom = new JPanel(new GridLayout(8, 1));
@@ -86,4 +86,5 @@ public class SettingsWindow extends JFrame {
         add(panBottom);
 //        add(btnStart);
     }
+
 }
