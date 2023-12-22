@@ -3,6 +3,7 @@ package ru.gb.Manerov.UI;
 import ru.gb.Manerov.Lesson2.Seminar2Menu;
 import ru.gb.Manerov.Lesson3.Seminar3Menu;
 import ru.gb.Manerov.Lesson4.homework4.Homework4Menu;
+import ru.gb.Manerov.Lesson5.Homework5.Homework5;
 import ru.gb.Manerov.lesson1.lecture1.Seminar1Menu;
 
 import javax.swing.*;
@@ -20,6 +21,7 @@ public class GeneralMenu extends JFrame {
     private final JButton BTN_SEMINAR_2 = new JButton("Семинар 2");
     private final JButton BTN_SEMINAR_3 = new JButton("Семинар 3");
     private final JButton BTN_HOMEWORK_4 = new JButton("Семинар 4");
+    private final JButton BTN_HOMEWORK_5 = new JButton("Семинар 5");
 
     private final JButton BTN_EXIT = new JButton("Выйти из программы");
 
@@ -39,6 +41,7 @@ public class GeneralMenu extends JFrame {
         panelTask.add(BTN_SEMINAR_2);
         panelTask.add(BTN_SEMINAR_3);
         panelTask.add(BTN_HOMEWORK_4);
+        panelTask.add(BTN_HOMEWORK_5);
         add(panelTask, BorderLayout.CENTER);
 
         setVisible(true);
@@ -77,6 +80,12 @@ public class GeneralMenu extends JFrame {
         BTN_HOMEWORK_4.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 new Homework4Menu().start();
+            }
+        });
+
+        BTN_HOMEWORK_5.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                new Homework5().run();
             }
         });
     }
