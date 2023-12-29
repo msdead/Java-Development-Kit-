@@ -1,11 +1,5 @@
 package ru.gb.Manerov.Lesson4.homework4;
 
-
-import ru.gb.Manerov.UI.InterSeminarMenu;
-
-
-
-
 public class Homework4Menu extends Thread {
     Actions actions = new Actions();
     private ConsoleView cv = new ConsoleView();
